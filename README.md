@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# npm install recat-router-dom
+
+Para realizar query string
+# npm i query-string
+
 ## Available Scripts
 
 In the project directory, you can run:
