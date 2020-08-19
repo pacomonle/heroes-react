@@ -1,12 +1,30 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
+import { AuthContext } from '../../auth/AuthContext'
+import { types } from '../../types/types'
+
 
 const LoginScreen = ({history}) => {
+ // destructurar el value dle provider
+const {user, dispatch} = useContext(AuthContext)
+
+console.log(user)
+
 
 const handleLogin = () => {
-   // console.log('click')
-    history.push('/')
-   // history.replace('/')
+  
+const path = localStorage.getItem('lastPath') || '/'
+// console.log(path)
+  const loginAction = {
+    type: types.login,
+    payload: {name: 'Monleon'}
+  }
+
+  dispatch(loginAction)
+
+    // history.push('/')
+    history.replace(`${path}`)
+  
 }
 
     return (

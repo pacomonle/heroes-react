@@ -6,11 +6,11 @@ import MarvelScreen from '../components/Marvel/MarvelScreen'
 import HeroesScreen from '../components/Heroes/HeroesScreen'
 import SearchScreen from '../components/search/SearchScreen'
 
-const DashBoardRoutes = ( )=> {
+const DashBoardRoutes = ( props )=> {
     return (
         <>
-            <Navbar />
-            
+            {/*<Navbar history={props.history} />*/}
+            <Navbar history={props.history} />
             <div className='container mt-4'>
                 <Switch>
                     <Route excat path='/dc' component={DcScreen} />
