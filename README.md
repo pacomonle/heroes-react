@@ -5,6 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Para realizar query string
 # npm i query-string
 
+Para las pruebas instalar:
+# npm i --save-dev enzyme enzyme-adapter-react-16
+# npm install --save-dev enzyme-to-json
+
 ## Available Scripts
 
 In the project directory, you can run:

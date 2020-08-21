@@ -10,11 +10,11 @@ const SearchScreen = ({ history }) => {
 
     const location = useLocation();
    // console.log(location)
-    const { q } = queryString.parse( location.search );
+    const { q = '' } = queryString.parse( location.search );
 
 
     const initialForm = {
-        searchText: ''
+        searchText: q
     }
     const [ formValue,  ,handleInputChange ] = useForm(initialForm);
     
@@ -28,6 +28,8 @@ const SearchScreen = ({ history }) => {
        
         history.push(`?q=${ searchText }`);
     }
+
+    console.log(searchText)
 
     return (
         <div>

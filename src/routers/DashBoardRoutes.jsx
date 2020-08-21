@@ -10,7 +10,7 @@ const DashBoardRoutes = ( props )=> {
     return (
         <>
             {/*<Navbar history={props.history} />*/}
-            <Navbar history={props.history} />
+            <Navbar  />
             <div className='container mt-4'>
                 <Switch>
                     <Route excat path='/dc' component={DcScreen} />
